@@ -6,11 +6,10 @@ let num = 1
 async function advice() {
     const res = await fetch("https://api.adviceslip.com/advice");
     const data = await res.json();
-    console.log(data.slip.advice)
     adviceP.textContent = data.slip.advice;
 }
 
-addEventListener("load", advice)
+window.addEventListener("load", advice)
 
 btn.addEventListener("click", () => {
     num++
