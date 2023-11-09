@@ -10,6 +10,8 @@ async function advice() {
     adviceP.textContent = data.slip.advice;
 }
 
+addEventListener("load", advice)
+
 btn.addEventListener("click", () => {
     num++
    adviceNum.textContent = num
